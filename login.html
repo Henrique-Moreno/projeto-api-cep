@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+  <main class="container mt-5">
+    <h2>Faça seu Login</h2>
+    <form id="loginForm">
+      <div class="form-group">
+        <label for="username">Nome de Usuário:</label>
+        <input type="text" class="form-control" id="username" required>
+        <small class="text-danger d-none" id="usernameErro">O nome de usuário é obrigatório.</small>
+      </div>
+      <div class="form-group">
+        <label for="password">Senha:</label>
+        <input type="password" class="form-control" id="password" required>
+        <small class="text-danger d-none" id="passwordErro">A senha é obrigatória.</small>
+      </div>
+      <button type="submit" class="btn btn-primary">Entrar</button>
+      <button type="button" class="btn btn-secondary" id="cadastrar">Cadastrar</button>
+    </form>
+    <div id="loginErro" class="alert alert-danger mt-3 d-none">Credenciais inválidas.</div>
+  </main>
+
+  <script src="js/login.js"></script>
+</body>
+
+</html>
